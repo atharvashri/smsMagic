@@ -1,0 +1,23 @@
+<template>
+    <div class="card-wrap">
+        <template if:true={showToolTip}>
+            <div class="card-flow">
+                <div class="card-body">
+                    <lightning-icon class="post-icon" size="medium" icon-name="utility:share_post" alternative-text="Error!" title="Error"></lightning-icon>
+                    <div>
+                        <h4><lightning-formatted-text value={toolTipData.headerMessage} ></lightning-formatted-text></h4>
+                        <p><lightning-formatted-text value={toolTipData.infoMessage} ></lightning-formatted-text></p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <template if:true={toolTipData.firstButtonText}>
+                        <lightning-button variant="brand-outline" label={toolTipData.firstButtonText} title={toolTipData.firstButtonToolTip} class="slds-m-left_x-small" onclick={executeFirstButtonAction}></lightning-button>
+                    </template>
+                    <template if:true={toolTipData.secondButtonText}>
+                    <lightning-button variant="brand" label={toolTipData.secondButtonText} title={toolTipData.secondButtonToolTip}  class="slds-m-left_x-small" onclick={executeSecondButtonAction}></lightning-button>
+                    </template>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

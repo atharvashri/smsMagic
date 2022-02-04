@@ -1,0 +1,16 @@
+<apex:page >
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:trialOrgApp", function() {
+          $Lightning.createComponent("c:trialOrgMainComponent",{},'lightning',
+              function(cmp) {
+                console.log("button was created");
+                
+              }
+          );
+        });
+    </script>
+</apex:page>
