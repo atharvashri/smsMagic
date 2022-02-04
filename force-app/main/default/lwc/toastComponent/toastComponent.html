@@ -1,0 +1,21 @@
+<template>
+    <div class="notification-msg">
+        <div class="status-notification success slds-hide" id='success'>
+            <b><lightning-formatted-text class="status-text" value={toastObject.toastTitle} ></lightning-formatted-text></b>
+            <div class="flex-class">
+                <lightning-icon class="status-icon" size="small" icon-name="utility:success" alternative-text="success" title="success"></lightning-icon>
+                <lightning-formatted-text class="status-text" value={toastObject.toastMessage} ></lightning-formatted-text>
+            </div>
+            <lightning-button-icon class="close-toast" icon-name="utility:close" size="large"  variant="bare" alternative-text="Close" title="Close" onclick={closeToast}></lightning-button-icon>
+        </div>
+        <div class="status-notification error slds-hide" id='error'>
+            <b><lightning-formatted-text class="status-text" value={toastObject.toastTitle} ></lightning-formatted-text></b>
+            <div class="flex-class">
+                <lightning-icon class="status-icon" size="small" icon-name="utility:error" alternative-text="success" title="success"></lightning-icon>
+                <lightning-formatted-text class="status-text" value={toastObject.toastMessage} ></lightning-formatted-text>
+            </div>
+            <lightning-button-icon class="close-toast" icon-name="utility:close" size="large"  variant="bare" alternative-text="Close" title="Close" onclick={closeToast}></lightning-button-icon>
+        </div>
+        
+    </div>
+</template>

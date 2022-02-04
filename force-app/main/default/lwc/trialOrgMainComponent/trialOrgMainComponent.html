@@ -1,0 +1,134 @@
+<template>
+
+    <template if:true={isLightning}>
+        <div class="trial-wrap">
+            <h2><lightning-formatted-text value={welcomeMsg} ></lightning-formatted-text></h2>
+            <p class="info-text"><lightning-formatted-text value={label.Conversational_Info} ></lightning-formatted-text></p>
+
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-3">
+                    <p class="box-head">
+                        <lightning-icon class="info-icon" size="x-small" icon-name="utility:info" alternative-text="Error!" title="Error"></lightning-icon>
+                        <lightning-formatted-text value={label.Conversational_Avoid} ></lightning-formatted-text>
+                    </p>
+                    <div class="message-flow-box">
+                        <h3><lightning-formatted-text value={label.Conversational_Ready} ></lightning-formatted-text></h3>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_3-of-12">
+                                <div class="flow-card">
+                                    <div class="card-head">
+                                        <img src={double_opt_in}>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><lightning-formatted-text value={label.Double_opt_in} ></lightning-formatted-text></h4>
+                                        <p><lightning-formatted-text value={label.Include_Request} ></lightning-formatted-text></p>
+                                        <!-- <lightning-button variant="brand" label="Explore Double Opt-In" title="Primary action" class="card-flow-btn"></lightning-button> -->
+                                        <button class="slds-button slds-button_brand card-flow-btn" name='Lead' onclick ={redirectToLeadObject}>{label.Explore_Double_opt}</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div class="flow-card">
+                                    <div class="card-head">
+                                        <img src={inquiry_qualification}>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><lightning-formatted-text value={label.The_Inquiry_Qualification} ></lightning-formatted-text></h4>
+                                        <p><lightning-formatted-text value={label.Includes_two_sample} ></lightning-formatted-text></p>
+                                        <!-- <lightning-button variant="brand" label="Trigger Flow" title="Primary action" class="card-flow-btn"></lightning-button> -->
+                                        <button class="slds-button slds-button_brand card-flow-btn" onclick={triggerInquiryFlow}>{label.Trigger_Flow}</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div class="flow-card">
+                                    <div class="card-head">
+                                        <img src={nurture_campaign}>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><lightning-formatted-text value={label.The_Nurture_Campaign} ></lightning-formatted-text></h4>
+                                        <p><lightning-formatted-text value={label.Includes_two_campaign} ></lightning-formatted-text></p>
+                                        <!-- <lightning-button variant="brand" label="Trigger Campaign" title="Primary action" class="card-flow-btn"></lightning-button> -->
+                                        <button class="slds-button slds-button_brand card-flow-btn" name='SML__Campaign_Manager' onclick ={redirectToCampainManager}>{label.Trigger_Campaign}</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div class="flow-card">
+                                    <div class="card-head">
+                                        <img src={document_collection}>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><lightning-formatted-text value={label.The_Document_Collection} ></lightning-formatted-text></h4>
+                                        <p><lightning-formatted-text value={label.Includes_document_request} ></lightning-formatted-text></p>
+                                        <!-- <lightning-button variant="brand" label="Experience Flow" title="Primary action" class="card-flow-btn"></lightning-button> -->
+                                        <button class="slds-button slds-button_brand card-flow-btn" name='Lead' onclick={navigateToLeadRecordPage}>{label.Experience_Flow}</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-size_3-of-12">
+                                <div class="flow-card">
+                                    <div class="card-head">
+                                        <img src={support_handling}>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4><lightning-formatted-text value={label.ExperienceSupport_survey} ></lightning-formatted-text></h4>
+                                        <p><lightning-formatted-text value={label.Includes_initiation_handling} ></lightning-formatted-text></p>
+                                        <!-- <lightning-button variant="brand" label="Trigger Flow" title="Primary action" class="card-flow-btn"></lightning-button> -->
+                                        <button class="slds-button slds-button_brand card-flow-btn" onclick={onSurveyBtnClick}>{label.Trigger_Flow}</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-3">
+                    <div class="case-study-sidebar">
+                        <h3><lightning-formatted-text value={label.Conversational_Messaging}></lightning-formatted-text></h3>
+                        <template for:each={caseStudyData} for:item="caseItem" >
+                            <div key={caseItem.Customer} class="study-box">
+                                <div class="img-box"> 
+                                    <img src={caseItem.caseStudyImage}>
+                                </div>
+                                <div class="study-content">
+                                    <p class="case-text"><lightning-formatted-text value={label.Case_studies} ></lightning-formatted-text></p>
+                                    <h5><lightning-formatted-text value={caseItem.shortIntro} ></lightning-formatted-text></h5>
+                                    <lightning-formatted-url value={caseItem.caseStudyUrl} tooltip={caseItem.exactIndustry} label={label.Read_Story} target="_blank" class="read-story" ></lightning-formatted-url>
+                                </div>
+                            </div>
+                        </template>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <template if:true={isModalOpen}>
+            <!-- Modal/Popup Box LWC starts here -->
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    <div class="close-btn-box">
+                        <lightning-button-icon class="close-modal" icon-name="utility:close" size="large"  variant="bare" alternative-text="Close" title="Close" onclick={onModalCancel}></lightning-button-icon>
+                    </div>
+                    <lightning-record-form class="form-content" object-api-name="Lead"  mode='create' layout-type='full' columns='2' fields={fields} oncancel={onModalCancel} onsuccess={onLeadCreationSuccess}></lightning-record-form>
+                </div>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </section>
+        </template>
+
+        <c-toast-component toast-message={toastMessage} ></c-toast-component>
+
+        <c-tooltip-component ></c-tooltip-component>
+
+    </template>
+    <template if:false={isLightning}>
+        <div class="trial-wrap ">
+            <h2><lightning-formatted-text value={welcomeMsg} ></lightning-formatted-text></h2>
+            <p class="info-text"><lightning-formatted-text value={label.Conversational_Info} ></lightning-formatted-text></p>
+            <h2><lightning-formatted-text value="You are in classic view" ></lightning-formatted-text></h2>
+        </div>
+    </template>
+
+    <template if:true={showSpinner}>
+        <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+    </template>
+</template>

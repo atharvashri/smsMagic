@@ -1,0 +1,39 @@
+.notification-msg {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.status-notification {
+    padding: 12px 40px 12px 12px;
+    display: inline-block;
+    border-radius: 4px;
+    position: relative;
+    max-width: 90%;
+}
+.status-notification.success {
+    background-color: #2e844a;
+}
+.status-notification.error {
+    background-color: #ea001e;
+}
+.status-notification .close-toast {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    --lwc-colorTextIconDefault: #fff;
+}
+.status-notification .flex-class {
+    display: flex;
+}
+.status-notification .status-icon {
+    --lwc-colorTextIconDefault: #fff;
+    flex: 1;
+    margin-right: 10px;
+}
+.status-notification .status-text {
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+}
