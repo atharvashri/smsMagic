@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Case_studies</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Case studies</shortDescription>
+        <value>Case studies</value>
+    </labels>
+    <labels>
+        <fullName>Conversational_Avoid</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Conversational Avoid</shortDescription>
+        <value>Please avoid saving important data in this trial account, for it will be programmatically deleted as soon as your trial ends.</value>
+    </labels>
+    <labels>
+        <fullName>Conversational_Info</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Conversational Info</shortDescription>
+        <value>Even as you play around with SMS-Magic, we have curated some &apos;ready-to-send&apos; message flows which you can test on your own mobile number, NOW!</value>
+    </labels>
+    <labels>
+        <fullName>Conversational_Messaging</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Conversational_Messaging</shortDescription>
+        <value>Conversational Messaging Case Studies</value>
+    </labels>
+    <labels>
+        <fullName>Conversational_Ready</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Conversational_Ready</shortDescription>
+        <value>Ready-to-test message flows</value>
+    </labels>
+    <labels>
+        <fullName>Double_opt_in</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The double Opt-In Compliance</shortDescription>
+        <value>The double Opt-In Compliance</value>
+    </labels>
+    <labels>
+        <fullName>ExperienceSupport_survey</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Support Handling &amp; NPS survey</shortDescription>
+        <value>Support Handling &amp; NPS survey</value>
+    </labels>
+    <labels>
+        <fullName>Experience_Flow</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Experience Flow</shortDescription>
+        <value>Experience Flow</value>
+    </labels>
+    <labels>
+        <fullName>Explore_Double_opt</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Explore Double Opt-In</shortDescription>
+        <value>Explore Double Opt-In</value>
+    </labels>
+    <labels>
+        <fullName>Include_Request</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Includes a request message for opt-in</shortDescription>
+        <value>Includes a request message for opt-in &amp; aconfirmation message based on response received. Consent status for the CRM record is also auto-updated.</value>
+    </labels>
+    <labels>
+        <fullName>Includes_document_request</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Includes a document request message,</shortDescription>
+        <value>Includes a document request message, reminder message and confirmation message on receipt of the documents. Document status is auto-updated for the CRM record.</value>
+    </labels>
+    <labels>
+        <fullName>Includes_initiation_handling</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Includes initiation,</shortDescription>
+        <value>Includes initiation, handling &amp; closure of support request. Plus it covers survey questions with keyword responses &amp; a thank you message.</value>
+    </labels>
+    <labels>
+        <fullName>Includes_two_campaign</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Includes two campaign messages with short URLs</shortDescription>
+        <value>Includes two campaign messages with short URLs to drive conversions and track actions (such as visits and clicks)</value>
+    </labels>
+    <labels>
+        <fullName>Includes_two_sample</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Includes two sample</shortDescription>
+        <value>Includes two sample qualification questions sent one after another. Each has a keyword based response. Insights are auto-updated for the CRM record.</value>
+    </labels>
+    <labels>
+        <fullName>Read_Story</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Read Story</shortDescription>
+        <value>Read Story</value>
+    </labels>
+    <labels>
+        <fullName>The_Document_Collection</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The Document Collection</shortDescription>
+        <value>The Document Collection</value>
+    </labels>
+    <labels>
+        <fullName>The_Inquiry_Qualification</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The Inquiry Qualification</shortDescription>
+        <value>The Inquiry Qualification</value>
+    </labels>
+    <labels>
+        <fullName>The_Nurture_Campaign</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The Nurture Campaign</shortDescription>
+        <value>The Nurture Campaign</value>
+    </labels>
+    <labels>
+        <fullName>Trigger_Campaign</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trigger Campaign</shortDescription>
+        <value>Trigger Campaign</value>
+    </labels>
+    <labels>
+        <fullName>Trigger_Flow</fullName>
+        <categories>Trial org</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Trigger Flow</shortDescription>
+        <value>Trigger Flow</value>
+    </labels>
+</CustomLabels>
