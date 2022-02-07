@@ -43,6 +43,7 @@
         <name>CustomLabel</name>
     </types>
     <types>
+        <members>Knowledge__kav</members>
         <members>trial_org_tootip_manager__c</members>
         <name>CustomObject</name>
     </types>
@@ -57,6 +58,7 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>SharedDocuments</members>
         <members>Trial_Documents</members>
         <name>Document</name>
     </types>
@@ -70,6 +72,10 @@
         <name>HomePageLayout</name>
     </types>
     <types>
+        <members>smagicinteract</members>
+        <name>InstalledPackage</name>
+    </types>
+    <types>
         <members>trial_org_tootip_manager__c-trial org tootip manager Layout</members>
         <name>Layout</name>
     </types>
@@ -80,8 +86,74 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
+        <members>Opportunity.Default_Opportunity_Pipeline</members>
         <members>trial_org_tootip_manager__c.All</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>Case_Feed</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
+        <members>Analytics Cloud Security User</members>
+        <members>CPQ Integration User</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>Company Communities User</members>
+        <members>ContractManager</members>
+        <members>Guest License User</members>
+        <members>High Volume Customer Portal User</members>
+        <members>Identity User</members>
+        <members>MarketingProfile</members>
+        <members>Minimum Access - Salesforce</members>
+        <members>ServiceCloud</members>
+        <members>SolutionManager</members>
+        <members>Standard</members>
+        <members>Trial Customer Portal User</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Read_Only_profilePasswordPolicy1637020497515</members>
+        <name>ProfilePasswordPolicy</name>
+    </types>
+    <types>
+        <members>Read_Only_profileSessionSetting1637020497694</members>
+        <name>ProfileSessionSetting</name>
+    </types>
+    <types>
+        <members>Case.SendEmail</members>
+        <members>Task.Defer</members>
+        <members>Task.Defer_0</members>
+        <members>Task.Defer_1</members>
+        <members>Task.Defer_2</members>
+        <members>Task.Defer_3</members>
+        <members>Task.EditDescription</members>
+        <members>Task.EditDescription_0</members>
+        <members>Task.EditDescription_1</members>
+        <members>Task.EditDescription_2</members>
+        <members>Task.EditDescription_3</members>
+        <members>Task.UpdatePriority</members>
+        <members>Task.UpdatePriority_0</members>
+        <members>Task.UpdatePriority_1</members>
+        <members>Task.UpdatePriority_2</members>
+        <members>Task.UpdatePriority_3</members>
+        <members>Task.UpdateStatus</members>
+        <members>Task.UpdateStatus_0</members>
+        <members>Task.UpdateStatus_1</members>
+        <members>Task.UpdateStatus_2</members>
+        <members>Task.UpdateStatus_3</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>SVP_Customer_Experience</members>
+        <name>Role</name>
+    </types>
+    <types>
+        <members>Trial_Portal_Users</members>
+        <name>SharingSet</name>
     </types>
     <types>
         <members>ServiceCloudLogo</members>
@@ -94,5 +166,9 @@
         <members>support_handling</members>
         <members>test</members>
         <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Campaign.ViewCampaignInfluenceReport</members>
+        <name>WebLink</name>
     </types>
 </Package>

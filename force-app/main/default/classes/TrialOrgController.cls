@@ -1,6 +1,6 @@
 public with sharing class TrialOrgController {
     public TrialOrgController() {
-
+		system.debug('Change testing');
     }
 
     @AuraEnabled
