@@ -2,6 +2,7 @@ public with sharing class TrialOrgController {
     public TrialOrgController() {
 		system.debug('Change testing');
         system.debug('added testing');
+        system.debug('added In sandbox testing');
     }
 
     @AuraEnabled
